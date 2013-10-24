@@ -211,6 +211,118 @@
                     <p>The states correspond to a <strong>METHOD</strong> on ArcherActivity.java</p>                   
                 </section>
 
+                <section>
+                    <ol>
+                        <li>In ArcherActivity.java, override onCreate() method</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>In ArcherActivity.java, override onPause() method</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>In ArcherActivity.java, override onDestroy() method</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                    </ol>
+                </section>
+
+                <section>
+                    <ol>
+                        <li>Run your application. Observe the logs.</li>
+                        <li>Hit home button. Observe the logs.</li>
+                        <li>Open your application. Observe the logs.</li>
+                        <li>Hit the back button. Observe the logs.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Discussion (Part 2)</h2>
+                </section>
+
+                <section>
+                    <h2>Review:</h2>
+                    <br/>
+                    <p>The basic android building blocks are</p>
+                    <ul>
+                        <li>Activity</li>
+                        <li><h4>Broadcast Receiver</h4></li>
+                        <li><h4>Service</h4></li>
+                    </ul>
+                    <br/>
+                    <p>*Now we will discuss Broadcast Receiver and Service</p>
+                </section>
+
+                <section>
+                    <h1>Hands-on</h1>
+                    <h3>Broadcast Receiver</h3>
+                </section>  
+
+                <section>
+                    <ol>
+                        <li>Create a new project - Eagle</li>
+                        <li>Create a broadcast receiver - EagleReceiver.java</li>
+                        <li>Override onReceive() method</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Register EagleReceiver.java on AndroidManifest</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Run your Eagle app</li>
+                        <br/>
+                    </ol>
+                    <p>Nothing happened because the anticipated event was not broadcasted</p>
+                </section>
+
+                <section>
+                    <ol>
+                        <li>Let's go back to Archer project</li>
+                        <li>Change implementation for button click. It should broadcast an event.</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Run your Archer app and hit the button. See what happens</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h1>Hands-on</h1>
+                    <h3>ANR</h3>
+                </section>  
+
+                <section>
+                    <ol>
+                        <li>Go back to Eagle project</li>
+                        <li>Modify EagleReceiver > onReceive(). Add a 3-second delay before the toast</li>
+                        <li>Run it and hit the button. Observe what happens.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <p>ANR - Application Not Responding</p>
+                    <br/>
+                    <p>ANR is thrown because the broadcast receiver took more than 3 seconds to execute.</p>
+                    <br/>
+                    <p>If you are going to run long-running background processes, use a Service</p>
+                </section>
+
+                <section>
+                    <h1>Hands-on</h1>
+                    <h3>Service</h3>
+                </section> 
+
+                <section>
+                    <ol>
+                        <li>Go to Eagle Project</li>
+                        <li>Create a Service - EagleService.java</li>
+                        <li>Override EagleService.java > onStartCommand()</li>
+                            <p>- Execute toast with delay</p>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Modify EagleReceiver.java > onReceive()</li>
+                            <p>- Invoke EagleService</p>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Run the app and see if it succeeds</li>
+                        <br/>
+                    </ol>
+                    <p>Nothing happened because the anticipated event was not broadcasted</p>
+                </section>
+
+                <section>
+                    <h1>Thank you!</h1>
+                    <h3>@carlo_ledesma</h3>
+                </section> 
+
             </div>
         </div>
         <script src="reveal.js/js/reveal.min.js"></script>
