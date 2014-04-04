@@ -93,7 +93,7 @@
 
                 <section>
                     <h1>Hands-on</h1>
-                    <h3>Create a new Android project - Archer</h3>
+                    <h3>Create a new Android project - MyApp</h3>
                 </section>                
 
                 <section>
@@ -144,13 +144,13 @@
                 <section>
                     <ol>
                         <li>Create activity:</li>
-                            <p>ArcherActivity.java</p>
+                            <p>FirstActivity.java</p>
                         <li>Create layout:</li>
-                            <p>archer_activity_layout.xml</p>
+                            <p>first_activity_layout.xml</p>
                             <p>**Copy snippet from Gist.Github</p>
                         <li>Modify AndroidManifest.xml</li>
                             <p>To make Android aware of your activity</p>
-                            <p>So Android will show ArcherActivity.java on application start</p>
+                            <p>So Android will show FirstActivity.java on application start</p>
                             <p>**Copy snippet from Gist.Github</p>
                         <li>Run your application, and let me see</li>
                     </ol>
@@ -159,9 +159,9 @@
                 <section>
                     <ol>
                         <li>Create second activity:</li>
-                            <p>TigerActivity.java</p>
+                            <p>SecondActivity.java</p>
                         <li>Create layout:</li>
-                            <p>tiger_activity_layout.xml</p>
+                            <p>second_activity_layout.xml</p>
                             <p>**Copy snippet from Gist.Github</p>
                         <li>Modify AndroidManifest.xml</li>
                             <p>To make Android aware of your activity</p>
@@ -214,16 +214,16 @@
                         <li>onDestroy() - when an activity is killed</li>
                         <br/>
                     </ol> 
-                    <p>The states correspond to a <strong>METHOD</strong> on ArcherActivity.java</p>                   
+                    <p>The states correspond to a <strong>METHOD</strong> on FirstActivity.java</p>                   
                 </section>
 
                 <section>
                     <ol>
-                        <li>In ArcherActivity.java, override onCreate() method</li>
+                        <li>In FirstActivity.java, override onCreate() method</li>
                             <p>**Copy snippet from Gist.Github</p>
-                        <li>In ArcherActivity.java, override onPause() method</li>
+                        <li>In FirstActivity.java, override onPause() method</li>
                             <p>**Copy snippet from Gist.Github</p>
-                        <li>In ArcherActivity.java, override onDestroy() method</li>
+                        <li>In FirstActivity.java, override onDestroy() method</li>
                             <p>**Copy snippet from Gist.Github</p>
                     </ol>
                 </section>
@@ -261,13 +261,13 @@
 
                 <section>
                     <ol>
-                        <li>Create a new project - Eagle</li>
-                        <li>Create a broadcast receiver - EagleReceiver.java</li>
+                        <li>Create a new project - MyApp2</li>
+                        <li>Create a broadcast receiver - FirstReceiver.java</li>
                         <li>Override onReceive() method</li>
                             <p>**Copy snippet from Gist.Github</p>
-                        <li>Register EagleReceiver.java on AndroidManifest</li>
+                        <li>Register FirstReceiver.java on AndroidManifest</li>
                             <p>**Copy snippet from Gist.Github</p>
-                        <li>Run your Eagle app</li>
+                        <li>Run MyApp2 </li>
                         <br/>
                     </ol>
                     <p>Nothing happened because the anticipated event was not broadcasted</p>
@@ -275,10 +275,10 @@
 
                 <section>
                     <ol>
-                        <li>Let's go back to Archer project</li>
+                        <li>Let's go back to MyApp project</li>
                         <li>Change implementation for button click. It should broadcast an event.</li>
                             <p>**Copy snippet from Gist.Github</p>
-                        <li>Run your Archer app and hit the button. See what happens</li>
+                        <li>Run your MyApp app and hit the button. See what happens</li>
                     </ol>
                 </section>
 
@@ -289,8 +289,8 @@
 
                 <section>
                     <ol>
-                        <li>Go back to Eagle project</li>
-                        <li>Modify EagleReceiver > onReceive(). Add a 3-second delay before the toast</li>
+                        <li>Go back to MyApp2 project</li>
+                        <li>Modify FirstReceiver > onReceive(). Add a 3-second delay before the toast</li>
                         <li>Run it and hit the button. Observe what happens.</li>
                     </ol>
                 </section>
@@ -310,13 +310,13 @@
 
                 <section>
                     <ol>
-                        <li>Go to Eagle Project</li>
-                        <li>Create a Service - EagleService.java</li>
-                        <li>Override EagleService.java > onStartCommand()</li>
+                        <li>Go to MyApp2 Project</li>
+                        <li>Create a Service - FirstService.java</li>
+                        <li>Override FirstService.java > onStartCommand()</li>
                             <p>- Execute toast with delay</p>
                             <p>**Copy snippet from Gist.Github</p>
-                        <li>Modify EagleReceiver.java > onReceive()</li>
-                            <p>- Invoke EagleService</p>
+                        <li>Modify FirstReceiver.java > onReceive()</li>
+                            <p>- Invoke FirstService</p>
                             <p>**Copy snippet from Gist.Github</p>
                         <li>Run the app and see if it succeeds</li>
                         <br/>
@@ -326,7 +326,6 @@
 
                 <section>
                     <h1>Thank you!</h1>
-                    <h3>@carlo_ledesma</h3>
                 </section> 
 
             </div>
